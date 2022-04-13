@@ -45,7 +45,7 @@ const getWorkerInfo = function () {
             tr.querySelector('#del').addEventListener('click', () => {
                 tr.remove()
                 workerNames.splice(index--, 1)
-                localStorage.setItem('worker', JSON.stringify(worker))
+                localStorage.setItem('worker', JSON.stringify(workerNames))
             })
         }
     })
